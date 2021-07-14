@@ -1,65 +1,72 @@
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
-// function showResults(x){
-//     let newDiv = document.createElement('div');
-//     newDiv.className = 'katas';
-//     let newText = document.createTextNode(x);
-//     newDiv.appendChild(newText);
-//     let destination = document.getElementById('main');
-//     destination.appendChild(newDiv);
-// }
+function showResults(resultado){
+    const newDiv = document.createElement('div');
+    newDiv.className = 'katas';
+
+    const newText = document.createTextNode(resultado);
+    newDiv.appendChild(newText);
+ 
+    const destino = document.getElementById('principal');
+    destino.appendChild(newDiv);
+}
+
+
 
 function kata1() {
     let numeros1 = []
     for (let i = 1; i <= 25; i++) {
         numeros1.push(i)
         }
+    showResults(numeros1)
     return numeros1
-    
 }
 
-
-console.log(kata1())
+kata1()
 
 function kata2() {
     let numeros = []
     for (let i = 25; i >= 1; i--) {
         numeros.push(i)
         }
+    showResults(numeros)
     return numeros
 }
 
-console.log(kata2())
+kata2()
 
 function kata3() {
     let negative = []
     for (let i = -1; i >= -25 & i < 0; i--) {
         negative.push(i)
         }
+    showResults(negative)
     return negative
 }
 
-console.log(kata3())
+kata3()
 
 function kata4() {
     let negativeInv = []
     for (let i = -25; i <= -1 ; i++) {
         negativeInv.push(i)
         }
+    showResults(negativeInv)
     return negativeInv
 }
 
-console.log(kata4())
+kata4()
 
 function kata5() {
     let range = []
     for (let i = 25; i >= -25 ; i= i -2) {
         range.push(i)
     }
+    showResults(range)
     return range
 }
 
-console.log(kata5())
+kata5()
 
 function kata6() {
     let bythree =[]
@@ -68,10 +75,12 @@ function kata6() {
             bythree.push(i)
         }
     }
+    showResults(bythree)
     return bythree
 }
 
-console.log((kata6()))
+kata6()
+
 
 function kata7() {
     let byseven =[]
@@ -80,10 +89,11 @@ function kata7() {
             byseven.push(i)
         }
     }
+    showResults(byseven)
     return byseven
 }
 
-console.log(kata7())
+kata7()
 
 function kata8() {
    let byboth=[]
@@ -92,10 +102,11 @@ function kata8() {
            byboth.push(i)
        }
    }
+   showResults(byboth)
    return byboth 
 }
 
-console.log(kata8())
+kata8()
 
 function kata9() {
     let byfive =[]
@@ -104,14 +115,17 @@ function kata9() {
             byfive.push(i)
         }
     }
+    showResults(byfive)
     return byfive
 }
 
-console.log(kata9())
+kata9()
 
 function kata10() {
-    // implemente o código do kata 10 aqui
+    showResults(sampleArray)
 }
+
+kata10()
 
 function kata11() {
     let pares =[]
@@ -120,11 +134,12 @@ function kata11() {
             pares.push(sampleArray[i])
         }
     }
+    showResults(pares)
     return pares
-
 }
 
-console.log(kata11())
+kata11()
+
 
 function kata12() {
     let impares =[]
@@ -133,10 +148,11 @@ function kata12() {
             impares.push(sampleArray[i])
         }
     }
+    showResults(impares)
     return impares
 }
 
-console.log(kata12())
+kata12()
 
 function kata13() {
     let div8 =[]
@@ -145,10 +161,11 @@ function kata13() {
             div8.push(sampleArray[i])
         }
     }
+    showResults(div8)
     return div8
 }
 
-console.log(kata13())
+kata13()
 
 function kata14() {
     let div8 =[]
@@ -156,30 +173,36 @@ function kata14() {
         let sqrd = sampleArray[i]*sampleArray[i]
         div8.push(sqrd)
     }
+    showResults(div8)
     return div8
 }
 
-console.log(kata14())
+kata14()
+
 
 function kata15() {
     let sumTwenty = 0
     for (let i = 0; i < 21 ; i++){
         sumTwenty += i
     }
+    showResults(sumTwenty)
     return sumTwenty
 }
 
-console.log(kata15())
+kata15()
+
 
 function kata16() {
     let sumAll = 0
     for (let i = 0; i < sampleArray.length ; i++){
         sumAll += sampleArray[i]
     }
+    showResults(sumAll)
     return sumAll
 }
 
-console.log(kata16())
+kata16()
+
 
 function kata17() {
     let greater = 0
@@ -188,11 +211,11 @@ function kata17() {
             greater = sampleArray[i]
         }
     }
+    showResults(greater)
     return greater
 }
 
-console.log(kata17())
-
+kata17()
 
 function kata18() {
     let lower = sampleArray[0]
@@ -201,10 +224,12 @@ function kata18() {
             lower = sampleArray[i]
         }
     }
+    showResults(lower)
     return lower
 }
 
-console.log(kata18())
+kata18()
+
 
 /**
  * Daqui em diante são os bônus, por sua conta e risco
